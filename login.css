@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --font1: "roboto", monospace;
+}
+
+body {
+    background: url(background.jpg) no-repeat fixed center top / cover;
+    overflow: hidden;
+}
+
+header {
+    font-family: var(--font1);
+    color: white;
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+    text-shadow: 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px black;
+
+}
+
+section.square {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: -10px auto;
+    max-width: 350px;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+section.square * {
+    padding: 10px;
+}
+
+div.user *, div.pw * {
+    display: block;
+    height: 3vh;
+    margin: 10px;
+    
+}
+
+div.user label, div.pw label {
+    color: white;
+    font-family: var(--font1);
+    font-size: 30px;
+    text-shadow: 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px black;
+}
+
+div.user input, div.pw input {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    font-family: var(--font1);
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
