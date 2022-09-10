@@ -9,18 +9,28 @@
 </head>
 <body>
     <header>
-        pomptrash's social media
+        welcome
     </header>
     <section class="square">
-        <form action="home.html" class="form" method="post">
+        <form class="form" method="post">
             <div class="user">
                 <input type="text" name="user" id="user" required placeholder="username" minlength="4" maxlength="10">
             </div>
+
             <div class="pw">
                 <input type="password" name="pw" id="pw" required placeholder="password" minlength="8" maxlength="14">
             </div>
-            <button id="submit">log in</button>
-            <a class="signup" href="signup.html">new member? sign up</a>
+
+            <div class="email">
+                <input type="email" name="email" id="email" required placeholder="email">
+            </div>
+
+            <div class="terms">
+                <input required type="checkbox" name="terms" id="terms"><p>I agree to<a target="_blank" href="terms.html">Terms</a></p>
+            </div>
+
+            <button id="submit">sign up</button>
+            <a class="signup" href="index.html">already a member? login</a>
         </form>
     </section class="square">
     <footer>

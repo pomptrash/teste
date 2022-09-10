@@ -14,7 +14,6 @@
 
 body {
     background: url(background.jpg) no-repeat fixed center top / cover;
-    overflow: hidden;
 }
 
 header {
@@ -30,11 +29,12 @@ header {
 section.square {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    align-items: center;
+    border: 1px solid white;
     margin: -10px auto;
     max-width: 350px;
     min-height: 400px;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.384);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 
@@ -42,33 +42,76 @@ section.square * {
     padding: 10px;
 }
 
-div.user *, div.pw * {
+div.user *, div.pw *, div.email * {
     display: block;
     height: 3vh;
     margin: 10px;
     
 }
 
-div.user label, div.pw label {
-    color: white;
-    font-family: var(--font1);
-    font-size: 30px;
-    text-shadow: 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px black;
+
+div.user input, div.pw input, div.email input {
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
-div.user input, div.pw input {
-    border-radius: 10px;
-    border: 1px solid black;
+div.terms {
+    margin: 10px;
+}
+
+div.terms *{
+    color: white;
+    display: inline;
+}
+
+section.square div input{
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    
+}
+
+button#submit {
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+button#submit a {
+    text-decoration: none;
+    color: white;
+}
+
+
+a.signup {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+a.signup:hover {
+    background-color: rgba(128, 128, 128, 0.219);
 }
 
 footer {
     font-family: var(--font1);
     color: white;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
     margin-top: 20px;
     padding: 10px;
     font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    text-shadow: 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px black;
 }
